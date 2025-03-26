@@ -1,0 +1,120 @@
+A continuación se muestra un posible desarrollo paso a paso de cada ejercicio. 
+
+---
+
+## Ejercicios 01
+
+**Enunciado:** Determinar cuáles de los siguientes son *enunciados atómicos*:
+
+1. (a) *Los números de teléfono celular en Perú tienen 9 dígitos.*  
+2. (b) *3 + x = 11*  
+3. (c) *El producto de 3 números consecutivos es par.*  
+4. (d) *25643212 es un cuadrado perfecto.*  
+5. (e) *4 + 6 = 11*  
+
+**Recordatorio:**  
+- Un **enunciado atómico** (o proposición atómica) es aquel que no puede descomponerse en enunciados más simples mediante conectores lógicos (¬, ∧, ∨, →, etc.) ni contiene cuantificadores (\(\forall\), \(\exists\)).  
+- Si aparece una variable libre (por ejemplo, “\(x\)”), normalmente no estamos ante un enunciado cerrado (no es ni verdadero ni falso hasta que se especifique el valor o se ponga un cuantificador).  
+
+**Análisis de cada caso:**
+
+1. (a) “Los números de teléfono celular en Perú tienen 9 dígitos.”  
+   - En realidad, está hablando *universalmente* de todos los números de teléfono celular en Perú. Implícitamente es “Para todo número de teléfono celular en Perú, ese número tiene 9 dígitos.”  
+   - Por lo tanto, **no** es un enunciado atómico; subyace un cuantificador universal.  
+
+2. (b) “3 + x = 11”  
+   - Contiene la variable \(x\) sin cuantificar. Es una **fórmula abierta**: no es verdadero ni falso hasta que se asigne un valor a \(x\).  
+   - Por tanto, **no** se considera un enunciado (proposición) cerrado ni atómico.  
+
+3. (c) “El producto de 3 números consecutivos es par.”  
+   - De nuevo, habla de *cualquier* triple de números consecutivos. Implica un “Para todo conjunto de tres números consecutivos…”.  
+   - **No** es un enunciado atómico porque subyace una universalidad sobre los tres números.  
+
+4. (d) “25643212 es un cuadrado perfecto.”  
+   - Se refiere a un número específico y no introduce variables ni conectores. Es una afirmación concreta, evaluable como verdadera o falsa sin más.  
+   - **Sí** es un enunciado atómico.  
+
+5. (e) “4 + 6 = 11”  
+   - Es una afirmación directa y concreta, sin variables ni conectores.  
+   - **Sí** es un enunciado atómico (aunque sea falsa, sigue siendo una proposición simple).  
+
+**Conclusión de Ejercicios 01:**  
+Los enunciados atómicos son únicamente **(d)** y **(e)**.
+
+---
+
+## Ejercicios 02
+
+**Enunciado:** Expresar en lenguaje natural los siguientes enunciados matemáticos:
+
+1. (a) \(\forall x \in \mathbb{N},\, 4x + 1 < 0\)  
+2. (b) \(\exists y \in \mathbb{Z},\, x^2 - 1 = 0\)  
+
+> *Nota:* En (b) se observa una posible inconsistencia porque aparece \(x\) dentro de la expresión, pero el cuantificador es para \(y\). A menudo, este tipo de ejercicio se ve escrito como \(\exists x \in \mathbb{Z}:\, x^2 - 1 = 0\) o \(\exists y \in \mathbb{Z}:\, y^2 - 1 = 0\). Supondremos que se trata de la forma típica “\(\exists x \in \mathbb{Z} : x^2 - 1 = 0\)”.
+
+### (a) \(\forall x \in \mathbb{N},\, 4x + 1 < 0\)
+
+- **Lenguaje natural:**  
+  “Para todo número natural \(x\), \(4x + 1\) es menor que 0.”  
+
+*(Aunque en la práctica la proposición es falsa, la tarea solo pide expresarla en palabras.)*
+
+### (b) \(\exists x \in \mathbb{Z},\, x^2 - 1 = 0\)
+
+- **Lenguaje natural:**  
+  “Existe un número entero \(x\) tal que \(x^2 - 1 = 0\).”  
+
+*(Si se mantuviera exactamente “\(\exists y \in \mathbb{Z} : x^2 - 1 = 0\)”, en lenguaje natural sería “Existe un entero \(y\) tal que \(x^2 - 1 = 0\).” Pero, lógicamente, la variable interna debería coincidir.)*
+
+---
+
+## Ejercicios 03
+
+**Enunciado:** Negar los siguientes enunciados matemáticos:
+
+1. (a) \(\exists x \in \mathbb{N},\, x > 5\)  
+2. (b) \(\exists y \in \mathbb{R},\, y^2 + 5 = 0\)  
+
+**Recordatorio:**  
+- La negación de \(\exists x : P(x)\) es \(\forall x : \neg P(x)\).  
+- La negación de \(\forall x : P(x)\) es \(\exists x : \neg P(x)\).  
+
+### (a) Negar \(\exists x \in \mathbb{N},\, x > 5\)
+
+- Enunciado original: “Existe al menos un natural \(x\) mayor que 5.”  
+- Negación: “No existe ningún natural \(x\) mayor que 5.”  
+- En forma lógica:  
+  \[
+  \neg\bigl(\exists x \in \mathbb{N}:\, x > 5\bigr) \;\equiv\; \forall x \in \mathbb{N},\; x \le 5.
+  \]
+
+### (b) Negar \(\exists y \in \mathbb{R},\, y^2 + 5 = 0\)
+
+- Enunciado original: “Existe al menos un real \(y\) que satisfaga \(y^2 + 5 = 0\).”  
+- Negación: “No existe ningún real \(y\) que cumpla \(y^2 + 5 = 0\).”  
+- En forma lógica:  
+  \[
+  \neg\bigl(\exists y \in \mathbb{R}:\, y^2 + 5 = 0\bigr) \;\equiv\; \forall y \in \mathbb{R},\; y^2 + 5 \neq 0.
+  \]
+
+---
+
+## Resumen final
+
+1. **Ejercicios 01 (enunciados atómicos):**  
+   - Atómicos: (d) “25643212 es un cuadrado perfecto” y (e) “4 + 6 = 11”.  
+   - No atómicos: (a), (b), (c).  
+
+2. **Ejercicios 02 (expresar en lenguaje natural):**  
+   - (a) \(\forall x \in \mathbb{N},\, 4x + 1 < 0\)  
+     > “Para todo número natural \(x\), \(4x + 1\) es menor que 0.”  
+   - (b) \(\exists x \in \mathbb{Z},\, x^2 - 1 = 0\)  
+     > “Existe un número entero \(x\) tal que \(x^2 - 1 = 0\).”  
+
+3. **Ejercicios 03 (negaciones):**  
+   - (a) \(\exists x \in \mathbb{N},\, x > 5\)  
+     > Negación: \(\forall x \in \mathbb{N},\, x \le 5\).  
+   - (b) \(\exists y \in \mathbb{R},\, y^2 + 5 = 0\)  
+     > Negación: \(\forall y \in \mathbb{R},\, y^2 + 5 \neq 0\).  
+
+¡Y con esto quedan resueltos los ejercicios propuestos!
