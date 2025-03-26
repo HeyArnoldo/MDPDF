@@ -32,7 +32,7 @@ Este proyecto es un ejemplo de cómo crear una aplicación en React para **edita
 1. **Clona** este repositorio:
 
    ```bash
-   git clone https://github.com/tu-usuario/MDPDF.git
+   git clone https://github.com/HeyArnoldo/MDPDF.git
    cd MDPDF
    ```
 
