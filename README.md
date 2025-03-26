@@ -32,8 +32,8 @@ Este proyecto es un ejemplo de cómo crear una aplicación en React para **edita
 1. **Clona** este repositorio:
 
    ```bash
-   git clone https://github.com/tu-usuario/MDPDF-2.git
-   cd MDPDF-2
+   git clone https://github.com/tu-usuario/MDPDF.git
+   cd MDPDF
    ```
 
 2. **Instala** las dependencias:
@@ -73,7 +73,7 @@ Este proyecto es un ejemplo de cómo crear una aplicación en React para **edita
 ## Estructura del proyecto
 
 ```bash
-MDPDF-2
+MDPDF
 ├── node_modules
 ├── public
 │   ├── logo.svg
@@ -121,7 +121,7 @@ Esto generará una carpeta `dist` con los archivos optimizados para producción.
 
 ## Contribuciones
 
-¡Las contribuciones son bienvenidas! Si encuentras errores o deseas agregar nuevas características, abre un [issue](https://github.com/tu-usuario/MDPDF-2/issues) o envía un pull request.
+¡Las contribuciones son bienvenidas! Si encuentras errores o deseas agregar nuevas características, abre un [issue](https://github.com/HeyArnoldo/MDPDF/issues) o envía un pull request.
 
 ## Licencia
 
@@ -129,4 +129,4 @@ Este proyecto se distribuye bajo la [MIT License](LICENSE). Puedes usarlo librem
 
 ---
 
-¡Gracias por usar esta plantilla! Si tienes preguntas o sugerencias, no dudes en abrir un [issue](https://github.com/tu-usuario/MDPDF-2/issues).
+¡Gracias por usar esta plantilla! Si tienes preguntas o sugerencias, no dudes en abrir un [issue](https://github.com/HeyArnoldo/MDPDF/issues).
